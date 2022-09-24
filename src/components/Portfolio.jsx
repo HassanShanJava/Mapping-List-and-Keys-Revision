@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 
 import { data } from "../data/data.js";
 
@@ -7,7 +6,7 @@ const Portfolio = () => {
   const string2 = "// Check out some of my recent work.";
 
   // projects file
-  const [project, setProject] = useState(data);
+  const project=data;
 
   return (
     <div
@@ -18,7 +17,7 @@ const Portfolio = () => {
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8 ">
           <p className="text-4xl font-bold text-gray-300 inline border-b-4 border-pink-600">
-            Portfolio
+            Mapping Revision - Portfolio
           </p>
           <p className="py-6 ">{string2}</p>
         </div>
